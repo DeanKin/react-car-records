@@ -35,18 +35,22 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Car Records Dashboard</h1>
+      <h1>MiniBus Records</h1>
       <div className="records-container">
         {Object.entries(records).map(([car, record]) => (
-          <div key={car} className="record-card">
+          <div
+            key={car}
+            className={`record-card ${
+              record?.total === 19 ? "red" : record?.location === "Off" ? "gray" : ""
+            }`}
+          >
             <h2>{car}</h2>
             {record ? (
               <>
                 <p>Time: {record.timestamp.split("T=")[1]}</p>
                 <p>Location: {record.location}</p>
-                <p>Button ID: {record.buttonId}</p>
-                <p>State: {record.state}</p>
-                <p>Total: {record.total}</p>
+                <p>Total in car: {record.total}</p>
+                <p>Vacant Seat: {19 - record.total}</p>
               </>
             ) : (
               <p>No record available</p>
