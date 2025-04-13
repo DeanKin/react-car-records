@@ -1,0 +1,50 @@
+{
+  "Car 1": {
+    "car": "Car 1",
+    "timestamp": "13/4/2025 T=14:51:33",
+    "location": "Station 1",
+    "buttonId": 14,
+    "state": "ON",
+    "total": 15
+  },
+  "Car 2": {
+    "car": "Car 2",
+    "timestamp": "13/4/2025 T=15:1:5",
+    "location": "Station 5",
+    "buttonId": 14,
+    "state": "ON",
+    "total": 19
+  },
+  "Car 3": {
+    "car": "Car 3",
+    "timestamp": "13/4/2025 T=15:0:55",
+    "location": "Station 1",
+    "buttonId": 17,
+    "state": "OFF",
+    "total": 19
+  },
+  "Car 4": {
+    "car": "Car 4",
+    "timestamp": "13/4/2025 T=14:58:36",
+    "location": "Station 5",
+    "buttonId": 19,
+    "state": "ON",
+    "total": 17
+  },
+  "Car 5": {
+    "car": "Car 5",
+    "timestamp": "13/4/2025 T=15:1:25",
+    "location": "Station 3",
+    "buttonId": 6,
+    "state": "ON",
+    "total": 18
+  },
+  "Car 6": {
+    "car": "Car 6",
+    "timestamp": "13/4/2025 T=14:50:20",
+    "location": "Station 1",
+    "buttonId": 4,
+    "state": "ON",
+    "total": 5
+  }
+}
