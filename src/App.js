@@ -35,8 +35,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>MiniBus Records</h1>
-      <h2><a href="https://www.16seats.net/chi/gmb/gh_62.html" target="_blank">Minibus information</a></h2>
+      <h1>MiniBus Record</h1>
+      <h2><a href="https://www.16seats.net/chi/gmb/gh_62.html" target="_blank">62 Minibus information</a></h2>
       <div className="records-container">
         {Object.entries(records).map(([car, record]) => (
           <div
@@ -48,11 +48,12 @@ function App() {
             <h2>{car}</h2>
             {record ? (
               <>
-                <p>Time: {record.timestamp.split("T=")[1]}</p>
-                <p>To: {record.location2}</p>
+                
+                <p><b>To: {record.location2}</b></p>
                 <p>Car Location: {record.location}</p>
                 <p>Total in car: {record.total}</p>
                 <p>Vacant Seat: {19 - record.total}</p>
+                <p>Record Time: {record.timestamp.split("T=")[1]}</p>
               </>
             ) : (
               <p>No record available</p>
